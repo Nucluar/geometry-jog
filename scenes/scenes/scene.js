@@ -1,4 +1,5 @@
 import { player } from "../../player.js/player";
+import { Genrator } from "../../src/generatoe";
 
 export class GameScene extends Phaser.Scene {
     constructor() {
@@ -13,6 +14,8 @@ export class GameScene extends Phaser.Scene {
     create() {
         //set background color
         this.cameras.main.setBackgroundColor(0x88ceeb);
+
+this.Genrator = new Genrator(this);
 
         this.player = new Player()
     }
